@@ -1,0 +1,258 @@
+html {
+    font-size: 50px
+}
+
+body {
+    font-size: 24px
+}
+
+@media screen and (min-width:320px) {
+    html {
+        font-size: 21.33px
+    }
+    body {
+        font-size: 12px
+    }
+}
+
+@media screen and (min-width:360px) {
+    html {
+        font-size: 24px
+    }
+    body {
+        font-size: 12px
+    }
+}
+
+@media screen and (min-width:375px) {
+    html {
+        font-size: 25px
+    }
+    body {
+        font-size: 12px
+    }
+}
+
+@media screen and (min-width:384px) {
+    html {
+        font-size: 25.6px
+    }
+    body {
+        font-size: 14px
+    }
+}
+
+@media screen and (min-width:400px) {
+    html {
+        font-size: 26.67px
+    }
+    body {
+        font-size: 14px
+    }
+}
+
+@media screen and (min-width:414px) {
+    html {
+        font-size: 27.6px
+    }
+    body {
+        font-size: 14px
+    }
+}
+
+@media screen and (min-width:424px) {
+    html {
+        font-size: 28.27px
+    }
+    body {
+        font-size: 14px
+    }
+}
+
+@media screen and (min-width:480px) {
+    html {
+        font-size: 32px
+    }
+    body {
+        font-size: 15.36px
+    }
+}
+
+@media screen and (min-width:540px) {
+    html {
+        font-size: 36px
+    }
+    body {
+        font-size: 17.28px
+    }
+}
+
+@media screen and (min-width:720px) {
+    html {
+        font-size: 48px
+    }
+    body {
+        font-size: 23.04px
+    }
+}
+
+@media screen and (min-width:750px) {
+    html {
+        font-size: 50px
+    }
+    body {
+        font-size: 24px
+    }
+}
+
+
+
+/* 让html撑满整个手机 */
+html{
+    height: 100%;
+    /* min-width:320px; */
+}
+body{
+    height: 200%;
+    
+}
+
+header{
+    width: 100%;
+    height: 44px;
+    /*固定定位，是相对于手机窗口  */
+    position: fixed;
+    top:0;
+    left: 0;
+    
+    display: flex;
+    background-color: #C82519;
+    /* 值越大，盒子越靠前 */
+    z-index: 999;
+}
+header .cat_btn{
+    width: 40px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .cat_btn i{
+    /* 让i标签变性 */
+    display: block;
+    width: 20px;
+    height: 16px;
+    background: url(../images/cat_btn.png);
+    background-size: cover;
+}
+
+header .login{
+    width: 40px;
+    height: 44px;
+}
+
+header .login a{
+    /* 去掉下划线 */
+    text-decoration: none;
+    font-size: 12px;
+    /* 行高 */
+    line-height: 44px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+/* 搜索框 */
+header .form{
+    /* 富余空间全部给机械键盘了 */
+    flex: 1;
+    padding: 7px 4px 7px 4px;
+}
+header .form .k{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* 设置圆角 */
+    border-radius: 40px;
+    /* 参考点 */
+    position: relative;
+}
+header .form .k .jd_logo{
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    width: 20px;
+    height: 15px;
+    /* no-repeat不平铺 */
+    background: url(../images/jd_logo.png) no-repeat;
+    background-size: cover;
+}
+header .form .k .line{
+    position: absolute;
+    top: 8px;
+    left: 40px;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+header .form .k .fdj{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    left: 48px;
+    background: url(../images/jd-sprites.png) no-repeat;
+    background-size: 200px 200px;
+    background-position: -84px 0;
+}
+header .form .k .hot_word{
+    width: 155px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    left: 72px;
+    font-size: 12px;
+    color: #aaa;
+} 
+
+.carouse1_wrap{
+    position: relative;
+    width: 100%;
+
+    height: 6.5rem;
+    /* 超出部分隐藏掉 */
+    overflow: hidden;
+
+}
+.carouse1_wrap .carouse1_bg{
+    position: absolute;
+    top: 0px;
+    width: 150%;
+    height:4.8rem;
+    /* ? */
+    margin-left: -25%;
+    background-image: linear-gradient(0deg,#C82519 ,#E74633);
+    /* 圆角 */
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+/* 轮播图 */
+#carouse1{
+    margin-top: 1rem;
+    width: 90%;
+    height: 5.14rem;
+    border-radius: 10px;
+    overflow:hidden;
+}
+.swiper-container img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination-bullet{
+    width: 14px;
+    height: 4px;
+    border-radius: 4px;
+    background: red;
+}
